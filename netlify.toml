@@ -1,0 +1,15 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  VITE_APP_NAME = "Gatwick Tuning CRM"
+  VITE_COMPANY_NAME = "Gatwick Tuning"
+  VITE_COMPANY_ADDRESS = "Woodlands Garage\nChapel Road\nSmallfield\nRH6 9NN"
+  VITE_COMPANY_PHONE = "01342 621241"
+  VITE_COMPANY_EMAIL = "info@gatwicktuning.com"
